@@ -1,0 +1,95 @@
+* {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.header {
+    margin: 1rem 0;
+    color: orange;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline black 4px;
+}
+
+.restart-btn {
+    display: none;  
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: black;
+}
+
+.restart-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.score {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 2rem;
+    border: 2px solid white;
+    margin: 4rem;
+}
+
+.score p:first-child {
+    background-color: rgb(123, 192, 20);
+}
+
+.score p:last-Child {
+    background-color: rgb(233, 57, 57);
+}
+
+.show{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:2rem;
+    margin-top: 1rem;
+    text-align: center;
+    color:darkorange;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.choice {
+    cursor: pointer;
+}
+
+.choice:hover {
+    color: pink;
+}
+
+.text-win {
+    color: rgb(66, 103, 7);
+}
+
+.text-lose {
+    color: rgb(233, 5, 5);
+}

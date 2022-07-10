@@ -1,0 +1,60 @@
+:root{
+    --modal-duration: 1s            
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: rgb(230, 163, 38);
+    text-align: center;
+    margin: 10% auto;
+    width: 300px;
+    border-radius: 50px;
+    border: solid red;
+    padding: 2.5rem;
+    box-shadow: 2px 2px 2px 2px orange, 4px 4px 4px 4px yellow;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    .choice {
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 500px) {
+    .choice {
+        font-size: 80px;
+    }
+}
